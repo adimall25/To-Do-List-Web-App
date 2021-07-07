@@ -152,6 +152,6 @@ app.post("/delete/:listName", function(req, res){
         }
     })
 })
-app.listen(8000, function(){
-    console.log(`Server has started listening on port 8000`);
+app.listen(process.env.PORT || 8000, function(){
+    console.log(`Server has started...`);
 })
