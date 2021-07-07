@@ -5,8 +5,7 @@ const date = require(__dirname + '/date.js');
 const mongoose = require('mongoose');
 const _ = require('lodash');
 
-
-mongoose.connect('mongodb+srv://AdiMall:11235813@cluster0.weuvs.mongodb.net/todolistDB', {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect('mongodb://localhost:27017/todolistDB', {useNewUrlParser: true, useUnifiedTopology: true});
 mongoose.set('useFindAndModify', false);
 const app = express();
 app.use(bodyParser.urlencoded({extended:true}));
